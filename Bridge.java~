@@ -1,0 +1,28 @@
+public class Bridge{
+  public static void main(String [] args){
+    
+    
+    String color, value; 
+    int A = 4, R = 3, D = 2, V = 1;
+    int point_honneur = 0; 
+    
+    
+     for(int i = 0 ; i < 13 ; i++ ){
+       System.out.println("Entrer la carte " + (i +1) + " A, R, D, V, X, 9, 8, 7, 6, 5, 4, 3, 2" ); 
+       color = Clavier.lireString(); 
+       value = Clavier.lireString(); 
+       
+       switch(value){
+       case "A": point_honneur += 4; 
+       break; 
+       case "R": point_honneur += 3; 
+       break; 
+       case "D" :point_honneur += 2; 
+       break;
+       case "V" : point_honneur =+ 1; 
+       break;
+       }
+     }
+     System.out.println("votre gain pour les points d'honneur sont de: " + point_honneur);
+  }
+}
